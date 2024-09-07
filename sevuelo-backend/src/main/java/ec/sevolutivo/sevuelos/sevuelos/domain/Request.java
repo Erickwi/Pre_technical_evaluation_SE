@@ -24,7 +24,7 @@ public class Request implements Serializable {
     @NotNull
     @Size(max = 100)
     @Column(name = "passenger", length = 100, nullable = false)
-    private String passenger;
+    private String name;
 
     @NotNull
     @Size(max = 100)
@@ -45,11 +45,11 @@ public class Request implements Serializable {
     }
 
     public String getPassenger() {
-        return this.passenger;
+        return this.name;
     }
 
-    public void setPassenger(String passenger) {
-        this.passenger = passenger;
+    public void setPassenger(String name) {
+        this.name = name;
     }
 
     public String getDestination() {
